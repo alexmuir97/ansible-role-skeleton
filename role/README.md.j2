@@ -1,45 +1,43 @@
-# Ansible Role: {{ role_name }}
+# Ansible Role: test
+<!-- TODO: Provide a high-level role description.
+
+e.g An Ansible role to install and configure Cockpit. -->
 
 ## Description
-<!-- TODO: Short description to summarise the repository. Remove this line. -->
+<!-- TODO: Elaborate on the role's purpose and functionality.
 
-## Installation
-Install via git repository:
-
-Include this role in your playbook's `requirements.yml` file:
-
-```
----
-roles:
-# From GitHub, overriding the name and specifying a specific tag.
-  - name: {{ role_name }}
-    src: https://github.com/alexmuir97/ansible-role-{{ role_name }}
-    version: main
-```
-
-## Requirements
-None.
+e.g The role orchestrates the installation of the Cockpit Web interface, ensuring seamless setup, service initiation, and firewall configuration if required. It also intelligently detects the presence of related software, such as Podman or KVM, and installs corresponding Cockpit applications to enhance compatibility and functionality. This role aims to simplify the deployment and management of Cockpit across diverse environments. -->
 
 ## Dependencies
+
 None.
 
-## Role Variables
-Available variables are listed below, along with default values (see `defaults/main.yml`):
-<!-- TODO: Provide Variables and describe them. Remove this line. -->
+## Conflicts
+
+None.
+
+## Variables
+
+The role comes with default variables (via `defaults/main.yml`), which can be
+overridden.
+
+## Additional hints
+
+None.
+
+## Examples
+
+The below examples should help to explain how the role can be used.
 
 ```yaml
-{{ role_name}}_example: []
+# Simple example with defaults
+
+- name: "Examples for the usage"
+  hosts: "all"
+
+  tasks:
+
+    - name: "Example with defaults"
+      ansible.builtin.import_role:
+        name: "{{ role_name }}"
 ```
-
-## Example Playbook
-```yaml
-- hosts: all
-  roles:
-    - {{ role_name }}
-```
-
-## License
-MIT
-
-## Author Information
-This role was created by [Alex Muir](https://www.linkedin.com/in/alexmuir97/).
