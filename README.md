@@ -11,7 +11,7 @@ $ export ROLE_SKELETON_PATH=/path/to/skeleton
 $ export ROLE_NAME=role_name
 $ export ROLE_PATH=/path/to/roles
 
-$ git clone git@github.com:forlackofabetterusername/ansible-role-skeleton.git $ROLE_SKELETON_PATH
+$ git clone git@github.com:alexmuir97/ansible-role-skeleton.git $ROLE_SKELETON_PATH
 ```
 Optionally, the default role skeleton and ignoring of files can be configured with ansible.cfg.
 
