@@ -5,7 +5,7 @@ A skeleton for developing Ansible roles.
 This repository consists of a skeleton and guidance for templating Ansible roles.
 
 ## Installation
-Install from [Github](https://github.com/forlackofabetterusername/ansible-role-skeleton)
+Install from [Github](https://github.com/alexmuir97/ansible-role-skeleton)
 ```
 $ export ROLE_SKELETON_PATH=/path/to/skeleton
 $ export ROLE_NAME=role_name
@@ -26,7 +26,7 @@ More information about the configuration file can be found in the [Ansible Docs]
 The custom role skeleton directory can be supplied as follows:
 
 ```
-$ ansible-galaxy init $ROLE_NAME --init-path=$ROLE_PATH --role-skeleton=$ROLE_SKELETON_PATH/role
+$ ansible-galaxy role init $ROLE_NAME --init-path=$ROLE_PATH --role-skeleton=$ROLE_SKELETON_PATH/role
 ```
 
 Note: omit *--role-skeleton=* if *role_skeleton* has been configured in ansible.cfg
